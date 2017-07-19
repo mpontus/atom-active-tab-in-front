@@ -2,17 +2,10 @@
   "name": "active-tab-in-front",
   "main": "./lib/active-tab-in-front",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": [
-  ],
-  "activationCommands": {
-    "atom-workspace": "active-tab-in-front:toggle"
-  },
-  "repository": "https://github.com/atom/active-tab-in-front",
+  "description": "Keep active item at the front of all other items",
+  "repository": "https://github.com/mpontus/atom-active-tab-in-front",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {
   }
 }
