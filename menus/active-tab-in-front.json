@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle active-tab-in-front",
+        "command": "active-tab-in-front:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "active-tab-in-front",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "active-tab-in-front:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
