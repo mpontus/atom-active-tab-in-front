@@ -12,33 +12,29 @@ under your immediate attention.
 This workflow is comprised entirely using 4 commands:
 
 1. `alt-<N>` switch to N-th most recently active item
-2. `ctrl-alt-p` (or other) rotate item "wheel" to the left
-3. `ctrl-alt-n` (or other) rotate item "wheel" to the right
+2. `ctrl-p` (or other) rotate item "wheel" to the left
+3. `ctrl-n` (or other) rotate item "wheel" to the right
 4. `ctrl-b` (`fuzzy-finder:toggle-buffer-finder`) bring up a deep item
 
 Most often I use `alt-2` through `alt-4` to navigate between a few files I'm
 attending to.
 
 Remaining commands are used to find something farther down. `ctrl-b` allows you
-to find item by its name but I actually find myself using `ctrl-alt-p` and
-`ctrl-alt-n` more often.
+to find item by its name but I actually find myself using `ctrl-p` and
+`ctrl-n` more often.
 
-I also use `ctrl-alt-n` to "forget" about the item, and `ctrl-alt-p` to bring it
+I also use `ctrl-n` to "forget" about the item, and `ctrl-p` to bring it
 back. The wheel metaphor is mostly there for intuition, as it is hard to
 describe item destination otherwise.
 
 ### Keymap
 
-Use following snippet to enable the key bindings as described above. Add it to
-your `keymap.cson` (Edit > Keymap).
+I use following snippet to enable the key bindings as described above. You can
+add this to `keymap.cson` (Edit > Keymap). Note: this will override default
+commands: `fuzzy-finder:toggle-file-finder` and `application:new-file`.
 
 ```
 'atom-workspace':
-  'ctrl-alt-n': 'active-tab-in-front:bury-active-item'
-  'ctrl-alt-p': 'pane:show-previous-item'
+  'ctrl-p': 'pane:show-previous-item'
+  'ctrl-n': 'active-tab-in-front:bury-active-item'
 ```
-
-I would use `ctrl-n` and `ctrl-p` but I haven't figured out a way to override
-the default key bindings.
-
-Feel free to open an issue if you have a solution.
